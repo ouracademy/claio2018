@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import BillBoard from '../components/billboard'
 import {
   Segment,
   Container,
@@ -6,8 +7,7 @@ import {
   Header,
   Grid,
   Image,
-  Button,
-  Icon
+  Button
 } from 'semantic-ui-react'
 
 export default () => (
@@ -32,21 +32,7 @@ export default () => (
           </Menu.Menu>
         </Menu>
       </Container>
-      <Container text>
-        <Header
-          as='h1'
-          content='Welcome to CLAIO 2018'
-          inverted
-        />
-        <Header
-          as='h2'
-          content='November 5-7, 2018 – Lima, Perú'
-          inverted
-        />
-        <Button primary size='huge'>
-          Submit your paper<Icon name='right arrow' />
-        </Button>
-      </Container>
+      <BillBoard/>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
@@ -63,8 +49,6 @@ export default () => (
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
             <Image
-              bordered
-              rounded
               size='large'
               src='http://claio2016.cl/wp-content/uploads/2016/03/claio.png'
             />
@@ -81,29 +65,5 @@ export default () => (
            
 
     `}</style>
-    <style jsx global>{`
-      .billboard {
-        background-image: url('static/background.jpg') !important;
-        background-size: cover !important;
-      }
-      
-      h1.ui.inverted.header { 
-        font-size: 3.8em;
-        font-weight: normal;
-        margin-bottom: 0;
-        margin-top: 3em;
-      }
-
-      h2.ui.inverted.header {
-        font-size: 1.7em;
-        font-weight: normal;
-      }
-
-      .ui.inverted.vertical.center.aligned.segment {
-        min-height: 700px;
-        padding: 1em 0em;
-      }
-    `}
-    </style>
   </div>
 )
