@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import BillBoard from '../components/billboard'
+import Footer from '../components/footer'
+import Logo from '../components/logo'
+
 import {
   Segment,
   Container,
@@ -13,6 +16,7 @@ import {
 export default () => (
   <div>
     <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
     </Head>
     <Segment
@@ -23,7 +27,10 @@ export default () => (
     >
       <Container>
         <Menu inverted pointing secondary attached size='large'>
-          <Menu.Item header>CLAIO 2018</Menu.Item>
+          <Menu.Item header position="left" className="brand">
+            <Logo/>
+            CLAIO 2018
+          </Menu.Item>
           <Menu.Menu position='right'>
             <Menu.Item as='a' active>Home</Menu.Item>
             <Menu.Item as='a'>CLAIO 2018</Menu.Item>
@@ -49,8 +56,8 @@ export default () => (
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
             <Image
-              size='large'
-              src='http://claio2016.cl/wp-content/uploads/2016/03/claio.png'
+              size='medium'
+              src='static/logo.svg'
             />
           </Grid.Column>
         </Grid.Row>
@@ -61,9 +68,17 @@ export default () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <style jsx>{`
-           
+    <Footer/>
+    <style jsx global>{`
+    .ui.large.menu {
+        font-size: 1.2rem !important;
+    }
 
+    .left.header.item.brand {
+      font-size: 1.3rem !important;
+      padding-top: 2rem !important;
+      padding-left: 5rem !important;
+    }
     `}</style>
   </div>
 )
