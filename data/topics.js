@@ -1,0 +1,40 @@
+export default [
+    { name: 'Applied probability and stochastic modeling' },
+    { name: 'Continuous optimization' },
+    { name: 'Data envelopment analysis' },
+    { name: 'Decision analysis' },
+    { name: 'Discrete and combinatorial optimization' },
+    { name: 'Finance and risk management' },
+    { name: 'Graphs and networks' },
+    { name: 'Heuristics and metaheuristics' },
+    { name: 'Location analysis' },
+    { name: 'Multicriteria decision making and optimization' },
+    { name: 'Planning and scheduling' },
+    { name: 'Quality and reliability' },
+    { name: 'Revenue management and pricing' },
+    { name: 'Simulation' },
+    { name: 'Optimization under uncertainty' },
+    { name: 'Supply Chain Management' },
+    { name: 'Transportation science and routing' },
+    {
+        name: 'Application areas',
+        subAreas: [
+            ,
+            { name: 'Agriculture, natural resources and the environment' },
+            { name: 'Banking and finance' },
+            { name: 'Business analytics' },
+            { name: 'Data sciences' },
+            { name: 'Computer science and artificial intelligence' },
+            { name: 'Education' },
+            { name: 'Energy' },
+            { name: 'Humanitarian logistics and disaster management' },
+            { name: 'Informatics and bioinformatics' },
+            { name: 'Logistics and transportation systems' },
+            { name: 'Manufacturing' },
+            { name: 'Health care systems and medicine' },
+            { name: 'Public services' },
+            { name: 'Sports' },
+            { name: 'Telecommunications and information systems' }
+        ]
+    }
+]
