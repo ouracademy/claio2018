@@ -15,7 +15,7 @@ export default () => (
             />
             <Header
                 as='h2'
-                content='November 5-7, 2018 – Lima, Perú'
+                content='November 12-15, 2018 – Lima, Perú'
                 inverted
             />
             <Button primary size='huge'>
